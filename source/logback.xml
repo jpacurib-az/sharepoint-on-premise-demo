@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appender name="STD_OUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>[%d{yyyy-MM-dd HH:mm:ss.SSS}] %-5p [%c] %m%n%rootException</pattern>
+    </encoder>
+  </appender>
+
+  <logger name="com.azeus" level="INFO"> 
+    <appender-ref ref="STD_OUT" />
+  </logger>
+  
+  <root level="OFF" />
+</configuration>
